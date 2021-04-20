@@ -8,14 +8,14 @@ Write a function named `addOne` that takes an array of numbers, and returns a ne
 Use `forEach` to loop over the input array and work with each value.  Push the new value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
-const addOne = (arr) => {
-  let newarr =[];
-  arr.forEach((item,index) => {
-    newarr.push(item+1);
+// const addOne = (arr) => {
+//   let newarr =[];
+//   arr.forEach((item,index) => {
+//     newarr.push(item+1);
     
     
-  });
-  return newarr;
+//   });
+//   return newarr;
 };
 
 /* ------------------------------------------------------------------------------------------------
