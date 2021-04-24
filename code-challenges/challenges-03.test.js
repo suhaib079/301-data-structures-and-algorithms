@@ -29,6 +29,13 @@ const updateAnimal = (arr, callback) => {
   });
   return arr0;
 };
+const addAnimal =(arr,callback) => {
+  let newarr=[];
+  arr.forEach(element => {
+    newarr.push(callback)
+  });
+return newarr;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
