@@ -45,18 +45,23 @@ Write a function called sortNames that takes an array of names and sorts them al
 For example: 'Cat' would come before 'apple'
 ------------------------------------------------------------------------------------------------ */
 
+// const sortNames = (arr) => {
+//   // Solution code here...
+//   arr.sort((a,b) => {
+//     if (a < b){
+//       return -1;
+//     }
+//      else if (a > b) return 1;
+//      else return 0;
+//  });
+
+//  return arr;
+
+// };
 const sortNames = (arr) => {
   // Solution code here...
-  arr.sort((a,b) => {
-    if (a < b){
-      return -1;
-    }
-     else if (a > b) return 1;
-     else return 0;
- });
-
- return arr;
-
+  arr.sort();
+  return arr;
 };
 
 
