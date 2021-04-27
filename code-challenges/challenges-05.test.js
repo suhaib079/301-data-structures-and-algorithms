@@ -36,6 +36,8 @@ Write a function named removeThree that takes an index and an array. The functio
 
 const removeThree = (idx, arr) => {
   // Solution code here...
+  let output = arr.splice(idx,3); // at position idx remove 3 items
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -46,6 +48,8 @@ Write a function named joinArray that takes an array and joins all of the elemen
 
 const joinArray = (arr) => {
   // Solution code here...
+  let output = arr.join(' ');
+  return output;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -64,6 +68,14 @@ For example, if the input is 'Welcome', the output will be:
 const howMuchPencil = (str) => {
   let result = [];
   // Solution code here...
+  result.push(str);
+  let s1;
+  let d = str.length;
+  for(let i=0;i< d;i++){
+     s1 = str.slice(1);
+     str = s1 ;
+    result.push(s1);
+  }
   return result;
 };
 
@@ -77,6 +89,8 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 
 const wordsToCharList = (arr) => {
   // Solution code here...
+  let output = arr.split('');
+  return output;
 };
 
 
@@ -124,6 +138,16 @@ const gruffaloCrumble = {
 const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
+  let ingredients = recipe.ingredients;
+
+  ingredients.forEach(element => {
+    let index1 = element.indexOf(' ');
+    let str1 = element.slice(index1+1);
+    index1 = str1.indexOf(' ');
+    str1 = str1.slice(index1+1);
+    result.push(str1);
+  });
+
   return result;
 };
 
