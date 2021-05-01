@@ -16,7 +16,7 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
     
 //   });
 //   return newarr;
-};
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
